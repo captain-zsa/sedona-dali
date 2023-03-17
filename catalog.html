@@ -41,73 +41,77 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="inner-header-list">
-          <li class="inner-header-item">
-            <a class="visually-hidden" href="index.html">Главная</a>
-          </li>
-          <li class="inner-header-item">
-            <a class="inner-header-link">Гостиницы</a>
-          </li>
-        </ul>
-      </header>
-      <section class="catalog-products">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+      <div class="filter-img">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="inner-header-list">
+            <li class="inner-header-item">
+              <a class="visually-hidden" href="index.html">Главная</a>
+            </li>
+            <li class="inner-header-item">
+              <a class="inner-header-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <section class="catalog-products">
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Бассейн" checked>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Бассейн" checked>
                     Бассейн
-                </label>
-              </li>
-              <li>
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Парковка" checked>
-                  Парковка
                   </label>
-              </li>
-              <li>
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
-                  Wi-Fi
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Парковка" checked>
+                    Парковка
                   </label>
-              </li>
-            </ul>
-          </fieldset>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
-            <ul>
-              <li>
-                <label class="control">
-                  <input class="control-input" type="radio" name="products-group" value="hotel">
-                  Гостиница
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="products-group" value="hotel">
+                    Гостиница
+                    </label>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="control-input" type="radio" name="products-group" value="motel">
+                    Мотель
                   </label>
-              </li>
-              <li>
-                <label class="control">
-                  <input class="control-input" type="radio" name="products-group" value="motel">
-                  Мотель
-                </label>
-              </li>
-              <li>
-                <label class="control">
-                  <input class="control-input" type="radio" name="products-group" value="apartments">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                </li>
+                <li>
+                  <label class="control">
+                    <input class="control-input" type="radio" name="products-group" value="apartments">
+                    Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <button class="button" type="submit">Применить</button>
-          <button class="button" type="reset">Сбросить</button>
-        </form>
-        <h2 class="hotel-title">Найдено гостиниц: 38</h2>
+            <button class="button button-filter" type="submit">Применить</button>
+            <button class="button button-filter-reset" type="reset">Сбросить</button>
+          </form>
+        </section>
+      </div>
+      <section>
+        <h2 class="hotel-catalog-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешёвые</option>
@@ -178,7 +182,7 @@
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item pagination-item-light-gray">
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
@@ -197,7 +201,6 @@
             <a class="pagination-link">10</a>
           </li>
         </ul>
-        <a class="button pagination-show-more" type="button">Показать ещё</a>
       </section>
     </main>
 
